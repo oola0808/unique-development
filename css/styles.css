@@ -1,0 +1,182 @@
+/* ************************
+Base Styles
+*************************/
+
+html {
+    font-family: Helvetica, Helvetica Neue, Arial;
+    background-color: #646C79;
+}
+
+.title {
+    background-color: #646C79;
+    color: white;
+    padding: 1em;
+}
+
+#pageheader {
+  color: white;
+}
+
+body {
+    min-height: 100%;
+}
+
+footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height 2rem;
+    background-color: #646C79;
+    color: #1F3044;
+    text-align: center;
+    font-weight: bold;
+}
+
+#carousel_text {
+  color: black;
+  margin-bottom: 45rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#carouselimg {
+  transform: scale(.5, .5);
+}
+
+.column {
+  float: left;
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+
+/******************************
+Navigation Menu
+*******************************/
+
+/* [ON BIG SCREENS] */
+/* Wrapper */
+#hamnav {
+    width: 100%;
+    background: #000;
+    /* Optional */
+    position: sticky;
+    top: 0;
+  }
+  
+  /* Hide Hamburger */
+  #hamnav label, #hamburger { display: none; }
+  
+  /* Horizontal Menu Items */
+  #hamitems { display: flex; }
+  #hamitems a {
+    width: 20%; /* 100% / 5 tabs = 20% */
+    padding: 10px;
+    color: #1F3044;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover {
+    background: #646C79;
+  }
+  
+  /* [ON SMALL SCREENS] */
+  @media screen and (max-width: 768px){
+    /* Show Hamburger Icon */
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: #646C79;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    /* Break down menu items into vertical */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+  
+    /* Toggle Show/Hide Menu */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
+
+
+/******************************
+Modal
+*******************************/
+body {
+  font: 16px/1.5 Trebuchet MS;
+}
+.promo {
+  display: inline-block;
+  cursor: pointer;
+  padding: 2em;
+}
+
+.promo img {
+  max-width: 100%;
+}
+.articles {
+  display: none;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+}
+.modal-content {
+  background: white;
+  color: black;
+  max-width: 60em;
+  margin: 3em auto;
+  padding: 2em;
+}
+.modal-close {
+  float: right;
+  margin: 0 0 2em 2em;
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#italic {
+  font-style: italic;
+}
+
+
+
+
+
+/******************************
+Media Queries
+*******************************/
+
+@media screen and (min-width: 720px) {
+
+.logo {
+
+}
+
+}
+
+
+/*************************
+Clearfix
+************************ */

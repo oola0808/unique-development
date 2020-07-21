@@ -2,9 +2,17 @@
 Base Styles
 *************************/
 
-html {
+body {
     font-family: Helvetica, Helvetica Neue, Arial;
+    min-height: 100%;
     background-color: #646C79;
+    color: white;
+    font: 16px/1.5 Trebuchet MS;
+    background: url(../img/cityview.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
 }
 
 .title {
@@ -13,28 +21,43 @@ html {
     padding: 1em;
 }
 
+#second {
+  
+}
+
+#quotes {
+  
+}
+
+#navigation {
+  background-image: linear-gradient(130deg,#001a72 0%,#005eb8 100%);
+  background-color: transparent;
+}
+
 #pageheader {
   color: white;
+  text-align: center;
+  font-weight: bold;
 }
 
 body {
-    min-height: 100%;
+    
 }
 
 footer {
-    /* position: fixed; */
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height 2rem;
-    background-color: #646C79;
-    color: #1F3044;
-    text-align: center;
-    font-weight: bold;
+    background-image: linear-gradient(130deg,#005eb8 0%,#001a72 100%);
+    background-color: transparent;
+    color: white;
+    text-align: left;
 }
 
 #carousel_text {
-  color: black;
+  color: white;
   margin-bottom: 45rem;
   font-style: italic;
   font-weight: bold;
@@ -61,64 +84,12 @@ footer {
 Navigation Menu
 *******************************/
 
-/* [ON BIG SCREENS] */
-/* Wrapper */
-#hamnav {
-    width: 100%;
-    background: #000;
-    /* Optional */
-    position: sticky;
-    top: 0;
-  }
-  
-  /* Hide Hamburger */
-  #hamnav label, #hamburger { display: none; }
-  
-  /* Horizontal Menu Items */
-  #hamitems { display: flex; }
-  #hamitems a {
-    width: 20%; /* 100% / 5 tabs = 20% */
-    padding: 10px;
-    color: #1F3044;
-    text-decoration: none;
-    text-align: center;
-  }
-  #hamitems a:hover {
-    background: #646C79;
-  }
-  
-  /* [ON SMALL SCREENS] */
-  @media screen and (max-width: 768px){
-    /* Show Hamburger Icon */
-    #hamnav label { 
-      display: inline-block; 
-      color: white;
-      background: #646C79;
-      font-style: normal;
-      font-size: 1.2em;
-      padding: 10px;
-    }
-  
-    /* Break down menu items into vertical */
-    #hamitems a {
-      box-sizing: border-box;
-      display: block;
-      width: 100%;
-      border-top: 1px solid #333;
-    }
-  
-    /* Toggle Show/Hide Menu */
-    #hamitems { display: none; }
-    #hamnav input:checked ~ #hamitems { display: block; }
-  }
 
 
 /******************************
 Modal
 *******************************/
-body {
-  font: 16px/1.5 Trebuchet MS;
-}
+
 .promo {
   display: inline-block;
   cursor: pointer;

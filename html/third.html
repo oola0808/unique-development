@@ -14,34 +14,39 @@
 </head>
 
 <body class="title">
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg" id="navigation">
-        <!-- Navbar brand -->
-        <span class="navbar-text">
-          <a class="navbar-brand"><img class="order-1" src="../img/bluelogo.PNG"></a>
-        </span>
-        <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent20">
-            <!-- Links -->
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="second.html">Customer Care</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="third.html">Communication</a>
-                </li>
-            </ul>
+    <nav class="topnav" id="myTopnav">
+        <a class="navbar-brand"><img class="order-1" src="../img/bluelogo.PNG"></a>
+        <a href="index.html" class="active">Home</a>
+        <a href="second.html">Customer Care</a>
+        <a href="third.html">Communication</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
+
+    <div class="row">
+        <div class="container promo col-sm" id="italic" data-article="angry">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cegkZKh-dkA" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <h5>10 Words You Need Right Now to Sound Smart at Work in English</h5>
+        </div>
+
+        <div class="container promo col-sm" id="italic" data-article="personal">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g3bRTK-PF2A" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <h5>10 More Smart Words to Use at Work</h5>
+        </div>
+
+        <div class="container promo col-sm" id="italic" data-article="powerwords">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xZ5CbxLRiIg" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <h5>Write Better Emails in English</h5>
+        </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

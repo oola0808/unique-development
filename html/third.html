@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="title">
@@ -24,9 +25,9 @@
         </a>
     </nav>
 
-    <div class="row">
-        <div class="container promo col-sm" id="italic" data-article="angry">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/cegkZKh-dkA" frameborder="0"
+    <!-- <div class="row">
+        <div class="container promo col-sm" id="italic">
+            <iframe src="https://www.youtube.com/embed/cegkZKh-dkA" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             <h5>10 Words You Need Right Now to Sound Smart at Work in English</h5>
@@ -44,9 +45,96 @@
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             <h5>Write Better Emails in English</h5>
+        </div> -->
+    <!-- </div> -->
+
+    <div class="row">
+        <div class="container promo col-sm" id="italic" data-article="hacks">
+            <img src="../img/email.jpg" alt="Talking in a group">
+            <h5>5 Psychological Hack to Improve Your Email Communication</h5>
+        </div>
+
+        <div class="container promo col-sm" id="italic" data-article="clearly">
+            <img src="../img/communicate.jpg" alt="meeting">
+            <h5>Communicate More Clearly in Just 7 Steps</h5>
+        </div>
+
+        <div class="container promo col-sm" id="italic" data-article="communicate">
+            <img src="../img/work.jpg" alt="Hand typing on keyboard">
+            <h5>10 Ways to Communicate Better at Work</h5>
+        </div>
+
+    </div>
+
+    <div class="modal" style="display: none;">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-article">
+                <!-- article content will be injected here -->
+            </div>
         </div>
     </div>
 
+    <div class="articles">
+
+        <div class="article" id="hacks">
+            <iframe src="../docs/hacks.pdf" width="100%" height="800px"></iframe>
+        </div>
+        <div class="article" id="clearly">
+            <iframe src="../docs/clearly.pdf" width="100%" height="800px"></iframe>
+        </div>
+        <div class="article" id="communicate">
+            <iframe src="../docs/communicate.pdf" width="100%" height="800px"></iframe>
+        </div>
+    </div>
+
+    <div class="container mb-0" id="quotes">
+        <div id="carouselContent" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active text-center p-4">
+              <p id="quote">The choice to have a great attitude is something nobody or no circumstance can take from
+                you.</p>
+              <p id="author">-Zig Ziglar</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+              <p id="quote">Your customer doesn't care how much you know until they know how much you care.</p>
+              <p id="author">-Damon Richards</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+              <p id="quote">Customers will want to talk to you if they believe you can solve their problems.</p>
+              <p id="author">-Jeffrey Gitomer</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+              <p id="quote">Kindness and courtesy are at the root of a positive customer service experience.</p>
+              <p id="author">-Shep Hyken</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+              <p id="quote">Superior service is a day to day, person to person challenge. Today is the day...the
+                challenge is yours.
+              </p>
+              <p id="author">-Bill Quiseng</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+              <p id="quote">People will forget what you said. <br>People will forget what you did.<br>But people will
+                never forget how you made them feel.</p>
+              <p id="author">-Maya Angelou</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+              <p id="quote">Do what you do so well they will want to see it again, and bring their friends.</p>
+              <p id="author">-Walt Disney</p>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

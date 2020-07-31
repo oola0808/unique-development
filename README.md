@@ -3,13 +3,12 @@
 ## Description
 This project is set up to be a resource to train call center agents on various skills that they use every day, such as customer service and communication skills. I used Bootstrap 4 for a majority of the project.
 
-## Custom CSS Classes
+## Features I Included
 
-Some of the custom CSS I wrote includes:
-* body
-* .title
-* footer
-* #pageheader
+* A navigation menu that collapses into a responsive mobile-friendly menu (such as a “hamburger” menu)
+* Import Bootstrap from a CDN and use its column system to create a responsive design
+* Create an image carousel with at least 3 images that it rotates through
 
-## JavaScript Functions
-I used JavaScript in the modals on the second and third pages and the top navigation on every page.
+## How to View My Project
+
+Open html/index.html to view.
